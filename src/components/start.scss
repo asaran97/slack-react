@@ -1,0 +1,115 @@
+@import "../index.scss";
+.container {
+  .content {
+    text-align: center;
+    input {
+      @include input(230px);
+    }
+    button {
+      @include button(140px);
+    }
+  }
+}
+.content2 {
+  width: 450px;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  .content2-body {
+    padding: 10px;
+    h4 {
+      margin: 0px;
+    }
+    p {
+      color: grey;
+      margin: 10px 20px 0 0;
+    }
+  }
+  .symbol {
+    color: $color;
+    margin-right: 20px;
+    font-size: 60px;
+  }
+  .symbol2 {
+    padding-top: 20px;
+    padding-left: 26px;
+    align-items: center;
+    font-size: 25px;
+  }
+}
+.otp {
+  text-align: center;
+  input {
+    @include input(300px);
+  }
+  button {
+    @include button(341px);
+  }
+}
+.nameofcompany {
+  h1 {
+    margin: 20px 20px 0 20px;
+  }
+  input {
+    @include input(309px);
+  }
+  button {
+    @include button(350px);
+  }
+}
+.teammates {
+  width: 400px;
+  input {
+    @include input(300px);
+  }
+  button {
+    @include button(341px);
+  }
+  span {
+    padding-top: 40px;
+    cursor: pointer;
+    color: $color;
+  }
+  .add-member {
+    cursor: pointer;
+    color: $color;
+    margin-bottom: 0px;
+    padding-right: 40px;
+    text-align: right;
+  }
+  .wrap-team {
+    display: flex;
+  }
+  .remove-icon {
+    display: none;
+  }
+  .wrap-team:hover .remove-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nameofcompany {
+    input {
+      width: 300px;
+    }
+  }
+  .teammates {
+    width: 300px;
+    button {
+      width: 240px;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .nameofcompany,
+  .otp {
+    input {
+      width: 209px;
+    }
+    button {
+      width: 250px;
+    }
+  }
+}
