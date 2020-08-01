@@ -1,4 +1,4 @@
-# Codebrahma-React-Boilerplate
+# React-Boilerplate
 
 A React Boilerplate with all the latest packages.
 
